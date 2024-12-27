@@ -1,6 +1,6 @@
 import "./styles.css"
 import {homePage} from "./home.js"
-import {aboutPage} from "./about.js"
+import {contactPage} from "./contact.js"
 import {menuPage} from "./menu.js"
 
 function displayPages(){
@@ -24,6 +24,13 @@ function displayPages(){
       homeButton.setAttribute("style", "background-color: red;");
       contactButton.setAttribute("style", "background-color: red;");
     });
+    contactButton.addEventListener("click", function(){
+      contactPage();
+      contactButton.setAttribute("style", "background-color: rgba(205, 46, 46, 0.678);");
+      menuButton.setAttribute("style", "background-color: red;");
+      homeButton.setAttribute("style", "background-color: red;");
+    });
   });
-  
 }
+
+displayPages();

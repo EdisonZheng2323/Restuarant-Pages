@@ -1,5 +1,0 @@
-function aboutPage(){
-
-}
-
-export {aboutPage};
